@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="">
       <Navbar />
-      <div className="flex mt-24">
+      <div className="flex">
         <Sidebar />
         {/* videos will render here. */}
         <Feed />

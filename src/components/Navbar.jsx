@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiVideoOn } from "react-icons/ci";
@@ -16,7 +16,11 @@ const Navbar = () => {
     <>
       <div className="flex justify-between px-10 fixed w-[100%] bg-white z-10 top-0 py-4">
         <div className="flex items-center gap-10">
-          <RxHamburgerMenu onClick={toggleHandler} size={"30px"} className="hover:cursor-pointer"/>
+          <RxHamburgerMenu
+            onClick={toggleHandler}
+            size={"30px"}
+            className="hover:cursor-pointer"
+          />
           <img
             width={"60px"}
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeVKKhcw5BVb33-sIFbVwBxpGvFjAORNkHA&usqp=CAU"

@@ -45,7 +45,7 @@ const sidebarItems = [
 const Sidebar = () => {
   const open = useSelector((state) => state.app.open);
   return (
-    <div className="overflow-y-auto overflow-x-hidden relative left-0 w-auto h-[88vh] mt-4">
+    <div className="overflow-y-auto overflow-x-hidden sticky top-[100px] left-0 w-auto h-[88vh] mt-4">
       {sidebarItems.map((item, idx) => {
         return (
           <div key={idx} className="flex gap-10 items-center p-3 ml-6">
