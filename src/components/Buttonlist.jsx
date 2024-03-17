@@ -15,7 +15,7 @@ const Buttonlist = () => {
   return (
     <div>
       {buttons.map((val, idx) => (
-        <button key={idx} className="bg-gray-200 rounded-lg text-xl px-5 py-2 mx-3 font-semibold">{val}</button>
+        <button key={idx} className="bg-gray-200 rounded-lg text-xl px-5 py-2 mx-3 font-semibold mt-3">{val}</button>
       ))}
     </div>
   );
