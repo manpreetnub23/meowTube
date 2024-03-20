@@ -17,10 +17,10 @@ const sidebarItems = [
     icons: <SiYoutubeshorts size={"35px"} />,
     title: "Shorts",
   },
-  {
-    icons: <MdOutlineSubscriptions size={"35px"} />,
-    title: "Subscription",
-  },
+  // {
+  //   icons: <MdOutlineSubscriptions size={"35px"} />,
+  //   title: "Subscription",
+  // },
   {
     icons: <IoIosTrendingUp size={"35px"} />,
     title: "Trending",
@@ -45,10 +45,12 @@ const sidebarItems = [
 const Sidebar = () => {
   const open = useSelector((state) => state.app.open);
   return (
-    <div className="overflow-y-auto overflow-x-hidden sticky top-[100px] left-0 w-auto h-[88vh] mt-4">
+    <div
+      className={`overflow-y-auto overflow-x-hidden sticky top-[100px] left-0 w-auto h-[88vh] mt-24 p-0`}
+    >
       {sidebarItems.map((item, idx) => {
         return (
-          <div key={idx} className="flex gap-10 items-center p-3 ml-6">
+          <div key={idx} className={`flex gap-10 items-center p-3 ml-6`}>
             {item.icons}
             <p className={`text-xl ${open ? "" : "hidden"}`}>{item.title}</p>
           </div>
