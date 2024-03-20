@@ -78,7 +78,7 @@ const Watch = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] border border-gray-300 ml-24 rounded-lg h-fit p-4">
+        {/* <div className="w-[100%] border border-gray-300 ml-24 rounded-lg h-fit p-4">
           <div className="flex justify-between items-center">
             <h1>Top Chat</h1>
             <BsThreeDotsVertical />
@@ -102,7 +102,7 @@ const Watch = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
